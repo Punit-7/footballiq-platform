@@ -1,0 +1,16 @@
+# docker/docker-compose.yml
+version: "3.9"
+services:
+  db:
+    image: postgres:15
+    container_name: footballiq-db
+    environment:
+      POSTGRES_USER: footballiq
+      POSTGRES_PASSWORD: footballiq
+      POSTGRES_DB: footballiq
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:

@@ -223,3 +223,4 @@ __pycache__/
 *.pyc
 data/raw/
 *.db
+src/data_engineering/data/raw/
